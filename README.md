@@ -55,19 +55,19 @@ AUTH_TOKEN = b"my_secure_token"
 ### 1. Sunucuyu başlat
 
 ```bash
-python receiver.py
+python -m receiver.receiver
 ```
 
 ### 2. Paket dinlemeyi başlat (isteğe bağlı)
 
 ```bash
-python scapy_sniffer.py
+python -m scapy_sniffer
 ```
 
 ### 3. Dosya gönder
 
 ```bash
-python sender.py
+python -m sender.sender
 ```
 
 ### 4. Çıktılar
@@ -84,35 +84,10 @@ python sender.py
 
 ---
 
-## 🚧 Bilinen Sınırlamalar
-
-- ❌ Paket kaybı veya sıralama bozulması durumunda yeniden gönderim yapılmaz.
-- ❌ TCP değil, UDP kullanıldığı için güvenilirlik kullanıcı sorumluluğundadır.
-- ❌ Şu anda sadece tek istemci desteklenmektedir.
-
----
-
-## 💡 Geliştirme Fikirleri
-
-- [ ] TCP destekli versiyon
-- [ ] RSA ile anahtar paylaşımı
-- [ ] Web arayüzü ile dosya seçimi ve ilerleme çubuğu
-- [ ] Çok istemcili destek
-
----
-
-## 📹 Demo Videosu
-
-🔗 [Video Bağlantısı](https://your-video-link.com)
-
----
-
 ## 📚 Kaynaklar
 
-- Stalling, W. (2016). *Cryptography and Network Security: Principles and Practice*. Pearson Education.
 - Python Docs. *socket – Low-level networking interface*. https://docs.python.org/3/library/socket.html
 - Scapy Documentation. https://scapy.readthedocs.io/
-- Towards Data Science. (2020). *How to Encrypt and Decrypt Files in Python using Fernet*. https://towardsdatascience.com/how-to-encrypt-and-decrypt-files-in-python-using-fernet-8d9c70a7110d
 
 ---
 
